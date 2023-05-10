@@ -2,15 +2,15 @@
 //  WisdomListHandler.swift
 //  WisdomTask
 //
-//  Created by Raghava Dokala on 09/05/23.
+//  Created by KOSURU UDAY SAIKUMAR on 09/05/23.
 //
 
 import Foundation
 import UIKit
 
 class WisdomListHandler {
-    func fetchTemps(completion: @escaping (WisdomList?, APIError?) ->Void){
-        let wisdomeListRouter = TempsApiRouter.list(page: "0")
+    func fetchWisdomeList(page:Int, perPage:Int,completion: @escaping (WisdomList?, APIError?) ->Void){
+        let wisdomeListRouter = WisdomeApiRouter.list(page: "\(page)")
         NetworkHandler().makeAPICall(router: wisdomeListRouter, decodingType: WisdomList.self) { (result) in
             switch result {
             case .success(let model):

@@ -2,8 +2,8 @@
 //  NetworkHandler.swift
 //  HappyBeing
 //
-//  Created by Raghava Dokala on 4/9/20.
-//  Copyright © 2020 RaghavaNaidu All rights reserved.
+//  Created by KOSURU UDAY SAIKUMAR on 4/9/20.
+//  Copyright © 2020 KOSURU UDAY SAIKUMAR All rights reserved.
 //
 
 import Foundation

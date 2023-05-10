@@ -2,8 +2,8 @@
 //  ZWObservers.swift
 //  ZohoWorkerly
 //
-//  Created by Raghava Dokala on 20/07/22.
-//  Copyright © 2022 Raghava Dokala. All rights reserved.
+//  Created by KOSURU UDAY SAIKUMAR on 20/07/22.
+//  Copyright © 2022 KOSURU UDAY SAIKUMAR. All rights reserved.
 //
 
 import Foundation

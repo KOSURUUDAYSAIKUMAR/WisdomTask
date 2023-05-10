@@ -1,6 +1,6 @@
 //
 //  LoaderView.swift
-//  WorkerlyAgent
+//  WisdomTask
 //
 //  Created by  Keerthana G on 22/03/23.
 //

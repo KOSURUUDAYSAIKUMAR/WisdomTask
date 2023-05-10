@@ -1,0 +1,22 @@
+PODS:
+  - CCBottomRefreshControl (0.5.2)
+  - SDWebImage (5.15.7):
+    - SDWebImage/Core (= 5.15.7)
+  - SDWebImage/Core (5.15.7)
+
+DEPENDENCIES:
+  - CCBottomRefreshControl
+  - SDWebImage (~> 5.0)
+
+SPEC REPOS:
+  trunk:
+    - CCBottomRefreshControl
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  CCBottomRefreshControl: 389780b4488321c91d18f66a6da5ef9606df6de5
+  SDWebImage: 25bac438318faf37e35650619ebc288a9061d292
+
+PODFILE CHECKSUM: 59ba99b1b6593245f4f6663d7267087a3de1d294
+
+COCOAPODS: 1.11.3

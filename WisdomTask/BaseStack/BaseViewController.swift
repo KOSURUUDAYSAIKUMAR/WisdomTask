@@ -1,6 +1,6 @@
 //
 //  BaseViewController.swift
-//  WorkerlyAgent(MVVM)
+//  WisdomTask
 //
 //  Created by  Keerthana G on 07/12/22.
 //
@@ -8,6 +8,7 @@
 import UIKit
 
 class BaseViewController: UIViewController {
+    var rightBarButton: UIBarButtonItem?
     
     var loader = UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 80, height: 80))
     override func viewDidLoad() {

@@ -1,6 +1,6 @@
 //
 //  LoaderViewStatus.swift
-//  WorkerlyAgent(MVVM)
+//  WisdomTask
 //
 //  Created by  Keerthana G on 28/12/22.
 //

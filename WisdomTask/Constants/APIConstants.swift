@@ -2,10 +2,12 @@
 //  APIConstants.swift
 //  WisdomTask
 //
-//  Created by Raghava Dokala on 09/05/23.
+//  Created by KOSURU UDAY SAIKUMAR on 09/05/23.
 //
 
 import Foundation
+typealias BoolCompletion = (_ success: Bool) -> Void
+
 struct APIConstants {
     static let defaultTimeOut: Double = 120.0
 

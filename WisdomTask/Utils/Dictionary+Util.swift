@@ -2,8 +2,8 @@
 //  Dictionary+Util.swift
 //  ZohoWorkerly
 //
-//  Created by Raghava Dokala on 02/07/20.
-//  Copyright © 2020 Raghava Dokala. All rights reserved.
+//  Created by KOSURU UDAY SAIKUMAR on 02/07/20.
+//  Copyright © 2020 KOSURU UDAY SAIKUMAR. All rights reserved.
 //
 
 import Foundation

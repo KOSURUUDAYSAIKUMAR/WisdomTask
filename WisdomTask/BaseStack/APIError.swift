@@ -1,6 +1,6 @@
 //
 //  APIError.swift
-//  WorkerlyAgent(MVVM)
+//  WisdomTask
 //
 //  Created by  Keerthana G on 07/12/22.
 //
@@ -13,7 +13,7 @@ struct ErrorConstants {
         static let serverError = "Server Error"
         static let jsonError = "Internal Error"
         static let badResponse = "Bad Response: Data not found"
-        static let noTemps = "No Temps"
+        static let noWisdomeList = "No Data"
     }
     struct ErrorMessages {
         static let noNetwork = "No internet connection. Please check the network settings."
@@ -21,7 +21,7 @@ struct ErrorConstants {
         static let jsonError = "Parsing failed"
         static let emotionError = "Please select your feelings."
         static let badResponse = "Bad Response: Data not found"
-        static let noTemps = "No Temps Available"
+        static let noWidomes = "No data Available"
     }
 }
 enum APIError: Error {
@@ -30,7 +30,7 @@ enum APIError: Error {
     case jsonError
     case runtimeError(String)
     case badResponse(URLResponse)
-    case noTemps
+    case noWisdomeData
 }
 extension APIError {
     var errorTitle: String {
@@ -45,8 +45,8 @@ extension APIError {
             return err
         case .badResponse(_):
             return ErrorConstants.ErrorTitles.badResponse
-        case .noTemps:
-            return ErrorConstants.ErrorTitles.noTemps
+        case .noWisdomeData:
+            return ErrorConstants.ErrorTitles.noWisdomeList
         }
     }
     var errorMessage: String {
@@ -59,8 +59,8 @@ extension APIError {
             return ErrorConstants.ErrorMessages.jsonError
         case .runtimeError(let err):
             return err
-        case .noTemps:
-            return ErrorConstants.ErrorMessages.noTemps
+        case .noWisdomeData:
+            return ErrorConstants.ErrorMessages.noWidomes
         case .badResponse(_):
             return ErrorConstants.ErrorMessages.badResponse
         }

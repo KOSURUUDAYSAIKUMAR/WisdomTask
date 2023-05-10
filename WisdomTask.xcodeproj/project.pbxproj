@@ -51,9 +51,11 @@
 		48B2B09E2A0ACB9500C64039 /* ImageNetworkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B2B09D2A0ACB9500C64039 /* ImageNetworkHandler.swift */; };
 		48B2B0A02A0AD20C00C64039 /* Data+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B2B09F2A0AD20C00C64039 /* Data+Util.swift */; };
 		48B2B0A22A0AD4B400C64039 /* ImageNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B2B0A12A0AD4B400C64039 /* ImageNetworking.swift */; };
+		AA95BAA7764B77C366C1EA08 /* Pods_WisdomTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A017BC19724CF8B47E99C708 /* Pods_WisdomTask.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		26BDC2D23AA0A3DCFA1EF36C /* Pods-WisdomTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WisdomTask.release.xcconfig"; path = "Target Support Files/Pods-WisdomTask/Pods-WisdomTask.release.xcconfig"; sourceTree = "<group>"; };
 		48B2B0262A0AAF4500C64039 /* WisdomTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WisdomTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48B2B0292A0AAF4500C64039 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48B2B02B2A0AAF4500C64039 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +102,8 @@
 		48B2B09D2A0ACB9500C64039 /* ImageNetworkHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageNetworkHandler.swift; sourceTree = "<group>"; };
 		48B2B09F2A0AD20C00C64039 /* Data+Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Util.swift"; sourceTree = "<group>"; };
 		48B2B0A12A0AD4B400C64039 /* ImageNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageNetworking.swift; sourceTree = "<group>"; };
+		60AC7CB7553233A67C57F0AA /* Pods-WisdomTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WisdomTask.debug.xcconfig"; path = "Target Support Files/Pods-WisdomTask/Pods-WisdomTask.debug.xcconfig"; sourceTree = "<group>"; };
+		A017BC19724CF8B47E99C708 /* Pods_WisdomTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WisdomTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA95BAA7764B77C366C1EA08 /* Pods_WisdomTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +123,8 @@
 			children = (
 				48B2B0282A0AAF4500C64039 /* WisdomTask */,
 				48B2B0272A0AAF4500C64039 /* Products */,
+				6C2BD1A1D6A40B118FC6EF63 /* Pods */,
+				BD4DE34DA02FED5AF8CC375E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -293,6 +300,24 @@
 			path = TableviewCells;
 			sourceTree = "<group>";
 		};
+		6C2BD1A1D6A40B118FC6EF63 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				60AC7CB7553233A67C57F0AA /* Pods-WisdomTask.debug.xcconfig */,
+				26BDC2D23AA0A3DCFA1EF36C /* Pods-WisdomTask.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BD4DE34DA02FED5AF8CC375E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A017BC19724CF8B47E99C708 /* Pods_WisdomTask.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -300,9 +325,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 48B2B03A2A0AAF4700C64039 /* Build configuration list for PBXNativeTarget "WisdomTask" */;
 			buildPhases = (
+				15B19AA85865E67F36FAEFC3 /* [CP] Check Pods Manifest.lock */,
 				48B2B0222A0AAF4500C64039 /* Sources */,
 				48B2B0232A0AAF4500C64039 /* Frameworks */,
 				48B2B0242A0AAF4500C64039 /* Resources */,
+				EAC81650E8CDAF093DF61DE7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -359,6 +386,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		15B19AA85865E67F36FAEFC3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WisdomTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EAC81650E8CDAF093DF61DE7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WisdomTask/Pods-WisdomTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WisdomTask/Pods-WisdomTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WisdomTask/Pods-WisdomTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		48B2B0222A0AAF4500C64039 /* Sources */ = {
@@ -546,6 +615,7 @@
 		};
 		48B2B03B2A0AAF4700C64039 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60AC7CB7553233A67C57F0AA /* Pods-WisdomTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -578,6 +648,7 @@
 		};
 		48B2B03C2A0AAF4700C64039 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26BDC2D23AA0A3DCFA1EF36C /* Pods-WisdomTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

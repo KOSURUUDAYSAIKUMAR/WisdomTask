@@ -1,6 +1,6 @@
 //
 //  NetworkConfiguration.swift
-//  WorkerlyAgent(MVVM)
+//  WisdomTask
 //
 //  Created by  Keerthana G on 15/12/22.
 //

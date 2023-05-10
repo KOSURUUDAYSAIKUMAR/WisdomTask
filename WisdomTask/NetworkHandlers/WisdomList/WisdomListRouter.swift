@@ -2,17 +2,17 @@
 //  WisdomListRouter.swift
 //  WisdomTask
 //
-//  Created by Raghava Dokala on 09/05/23.
+//  Created by KOSURU UDAY SAIKUMAR on 09/05/23.
 //
 
 import Foundation
 
-enum TempsApiRouter {
+enum WisdomeApiRouter {
     case list(page:String)
     case image(id:String)
 }
 
-extension TempsApiRouter: NetworkConfiguration {
+extension WisdomeApiRouter: NetworkConfiguration {
     var method: HTTPMethod {
         switch self {
         case .list:
@@ -39,7 +39,7 @@ extension TempsApiRouter: NetworkConfiguration {
         switch self {
         case .list(let page):
             return ["page":page,
-                    "limit":"100"]
+                    "limit":"20"]
         case .image(let id):
             return ["id":id]
         }

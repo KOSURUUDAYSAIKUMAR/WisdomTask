@@ -2,17 +2,17 @@
 //  WisdomeListCellViewModel.swift
 //  WisdomTask
 //
-//  Created by Raghava Dokala on 09/05/23.
+//  Created by KOSURU UDAY SAIKUMAR on 09/05/23.
 //
 
 import Foundation
 import UIKit
 
 enum WisdomeTableSectionType : Int {
-    case whoIsWorking
+    case wisdomeSection
 }
 enum WisdomeTableRowType {
-    case currentWorkingTemps
+    case generalRow
 }
 
 protocol WisdomeListCellViewModelBase {

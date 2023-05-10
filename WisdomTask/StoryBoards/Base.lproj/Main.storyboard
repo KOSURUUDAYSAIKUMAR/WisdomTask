@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Oqb-07-vFj">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" allowsSelectionDuringEditing="YES" allowsMultipleSelectionDuringEditing="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Oqb-07-vFj">
                                 <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                                 <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
@@ -54,10 +54,15 @@
                                                     <color key="textColor" red="0.56078431370000004" green="0.56078431370000004" blue="0.58039215690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="f9L-vh-21N">
+                                                    <rect key="frame" x="50" y="35" width="20" height="20"/>
+                                                </activityIndicatorView>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="f9L-vh-21N" firstAttribute="centerY" secondItem="RO5-tT-hvD" secondAttribute="centerY" id="2gS-gE-1CG"/>
                                                 <constraint firstItem="iSI-1C-Tay" firstAttribute="leading" secondItem="DsS-zf-sUD" secondAttribute="leading" id="8uA-wV-J51"/>
                                                 <constraint firstItem="DsS-zf-sUD" firstAttribute="top" secondItem="uZ8-CT-Ngx" secondAttribute="topMargin" constant="10" id="8vf-5d-GjF"/>
+                                                <constraint firstItem="f9L-vh-21N" firstAttribute="centerX" secondItem="RO5-tT-hvD" secondAttribute="centerX" id="GCc-HT-xjd"/>
                                                 <constraint firstItem="iSI-1C-Tay" firstAttribute="bottom" secondItem="uZ8-CT-Ngx" secondAttribute="bottom" constant="-15.33" id="Kka-3I-k9L"/>
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="iSI-1C-Tay" secondAttribute="trailing" constant="20" id="T6f-1E-SCI"/>
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="DsS-zf-sUD" secondAttribute="trailing" constant="20" id="YIz-xv-NTM"/>
@@ -69,6 +74,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="_imageView" destination="RO5-tT-hvD" id="1QV-GG-2rw"/>
+                                            <outlet property="activity" destination="f9L-vh-21N" id="wjZ-Ag-9a5"/>
                                             <outlet property="subtitle" destination="iSI-1C-Tay" id="osa-gv-NZZ"/>
                                             <outlet property="title" destination="DsS-zf-sUD" id="WWI-EF-pcf"/>
                                         </connections>
